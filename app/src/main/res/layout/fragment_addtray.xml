@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addtray.AddtrayFragment">
+
+    <EditText
+        android:id="@+id/editTextNoRows"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="rows"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNoColumns"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTray" />
+
+    <TextView
+        android:id="@+id/text_size"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Size"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNoColumns"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTray" />
+
+    <EditText
+        android:id="@+id/editTextTray"
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Tray Name"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTray" />
+
+    <ImageView
+        android:id="@+id/imageViewTray"
+        android:layout_width="200dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNoColumns"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="148dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="cols"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTray" />
+
+    <Button
+        android:id="@+id/buttonAddSeeds"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:text="Add Seeds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNoColumns" />
+
+    <Button
+        android:id="@+id/buttonAddSeedling"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text="Note Seedlings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddSeeds" />
+
+    <Button
+        android:id="@+id/buttonAddDeath"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Note Death"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddSeedling" />
+
+    <Button
+        android:id="@+id/buttonAddTransplant"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:text="Note Transplant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddDeath" />
+
+    <Button
+        android:id="@+id/buttonShowContents"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="33dp"
+        android:text="Show Contents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSummary" />
+
+    <TextView
+        android:id="@+id/textViewSummary"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:text="In here is a summary of the tray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddTransplant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
